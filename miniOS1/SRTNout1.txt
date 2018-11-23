@@ -1,0 +1,54 @@
+Process ID: 1	Waiting Time: 407.3725100000009	Turnaround Time: 420.91021000000086	Weighted Turnaround Time :31.09170760173448
+Process ID: 2	Waiting Time: 331.5105400000007	Turnaround Time: 344.6370400000007	Weighted Turnaround Time :26.255059612234845
+Process ID: 3	Waiting Time: 218.51470000000046	Turnaround Time: 230.08540000000045	Weighted Turnaround Time :19.88517548635782
+Process ID: 4	Waiting Time: 262.39486000000056	Turnaround Time: 274.79346000000055	Weighted Turnaround Time :22.163265207362166
+Process ID: 5	Waiting Time: 446.721200000001	Turnaround Time: 460.782800000001	Weighted Turnaround Time :32.768874096831155
+Process ID: 6	Waiting Time: 577.5630599999938	Turnaround Time: 596.7316599999938	Weighted Turnaround Time :31.130685600408675
+Process ID: 7	Waiting Time: 204.11481000000043	Turnaround Time: 215.60801000000043	Weighted Turnaround Time :18.759615250757008
+Process ID: 8	Waiting Time: 545.7730799999966	Turnaround Time: 563.5339799999966	Weighted Turnaround Time :31.728909007989273
+Process ID: 9	Waiting Time: 250.4376800000005	Turnaround Time: 262.4179800000005	Weighted Turnaround Time :21.904124270677737
+Process ID: 10	Waiting Time: 511.8229599999993	Turnaround Time: 528.1861599999993	Weighted Turnaround Time :32.278903881881256
+Process ID: 11	Waiting Time: 175.07600000000036	Turnaround Time: 186.33050000000037	Weighted Turnaround Time :16.556088675640886
+Process ID: 12	Waiting Time: 289.0105200000006	Turnaround Time: 301.6715200000006	Weighted Turnaround Time :23.826832003791218
+Process ID: 13	Waiting Time: 427.64914000000095	Turnaround Time: 441.70284000000095	Weighted Turnaround Time :31.429647708432725
+Process ID: 14	Waiting Time: 369.9780000000008	Turnaround Time: 383.4226000000008	Weighted Turnaround Time :28.51870639513268
+Process ID: 15	Waiting Time: 152.47846000000033	Turnaround Time: 163.24906000000033	Weighted Turnaround Time :15.156914192338434
+Process ID: 16	Waiting Time: 61.40988000000013	Turnaround Time: 69.81800000000013	Weighted Turnaround Time :8.303639814845663
+Process ID: 17	Waiting Time: 237.45750000000052	Turnaround Time: 249.3990000000005	Weighted Turnaround Time :20.885064690365574
+Process ID: 18	Waiting Time: 22.728460000000055	Turnaround Time: 30.559760000000054	Weighted Turnaround Time :3.9022588842210175
+Process ID: 19	Waiting Time: 346.5624600000008	Turnaround Time: 359.80486000000076	Weighted Turnaround Time :27.170668458889686
+Process ID: 20	Waiting Time: 104.17686000000023	Turnaround Time: 114.16790000000023	Weighted Turnaround Time :11.42702861764143
+Process ID: 21	Waiting Time: 553.6170199999953	Turnaround Time: 572.7422199999952	Weighted Turnaround Time :29.94699244975191
+Process ID: 22	Waiting Time: 87.7238800000002	Turnaround Time: 97.4747800000002	Weighted Turnaround Time :9.996490580356705
+Process ID: 23	Waiting Time: -0.08008999999999844	Turnaround Time: 10.213610000000001	Weighted Turnaround Time :0.9922195129059523
+Process ID: 24	Waiting Time: 460.172140000001	Turnaround Time: 475.130640000001	Weighted Turnaround Time :31.763254336999097
+Process ID: 25	Waiting Time: 67.85790000000016	Turnaround Time: 76.28974000000015	Weighted Turnaround Time :9.047816372227196
+Process ID: 26	Waiting Time: 146.1681500000003	Turnaround Time: 156.8272500000003	Weighted Turnaround Time :14.712991715998564
+Process ID: 27	Waiting Time: 7.692720000000023	Turnaround Time: 12.907020000000022	Weighted Turnaround Time :2.4753121224325456
+Process ID: 28	Waiting Time: 275.9708400000006	Turnaround Time: 288.58704000000057	Weighted Turnaround Time :22.87432348884772
+Process ID: 29	Waiting Time: 115.43756000000025	Turnaround Time: 125.85276000000025	Weighted Turnaround Time :12.083566326138744
+Process ID: 30	Waiting Time: 470.81528000000105	Turnaround Time: 485.90568000000104	Weighted Turnaround Time :32.19965541006209
+Process ID: 31	Waiting Time: 383.4368600000008	Turnaround Time: 396.94446000000084	Weighted Turnaround Time :29.386749681660756
+Process ID: 32	Waiting Time: 194.50588000000042	Turnaround Time: 205.9883800000004	Weighted Turnaround Time :17.93933202699764
+Process ID: 33	Waiting Time: 616.5804999999907	Turnaround Time: 638.4817999999907	Weighted Turnaround Time :29.15268956637235
+Process ID: 34	Waiting Time: 96.22439000000021	Turnaround Time: 105.98414000000021	Weighted Turnaround Time :10.859308896231994
+Process ID: 35	Waiting Time: 79.80625000000018	Turnaround Time: 88.40105000000017	Weighted Turnaround Time :10.285410946153508
+Process ID: 36	Waiting Time: 318.79762000000073	Turnaround Time: 331.6530200000007	Weighted Turnaround Time :25.798732050344658
+Process ID: 37	Waiting Time: 134.28820000000027	Turnaround Time: 144.77690000000027	Weighted Turnaround Time :13.803130988587744
+Process ID: 38	Waiting Time: 29.750940000000078	Turnaround Time: 37.791900000000076	Weighted Turnaround Time :4.699923889684823
+Process ID: 39	Waiting Time: 493.8805200000004	Turnaround Time: 509.3022200000004	Weighted Turnaround Time :33.02503744723347
+Process ID: 40	Waiting Time: 44.63232000000011	Turnaround Time: 52.78338000000011	Weighted Turnaround Time :6.475646112284796
+Process ID: 41	Waiting Time: 527.638419999998	Turnaround Time: 544.087919999998	Weighted Turnaround Time :33.07625885285255
+Process ID: 42	Waiting Time: 354.9007800000008	Turnaround Time: 368.1924800000008	Weighted Turnaround Time :27.700932160671755
+Process ID: 43	Waiting Time: 9.660120000000042	Turnaround Time: 16.96532000000004	Weighted Turnaround Time :2.322362152986919
+Process ID: 44	Waiting Time: 0.9015000000000111	Turnaround Time: 4.648640000000011	Weighted Turnaround Time :1.2405834850045665
+Process ID: 45	Waiting Time: 303.5306000000007	Turnaround Time: 316.21950000000066	Weighted Turnaround Time :24.920954535066134
+Process ID: 46	Waiting Time: 421.05358000000086	Turnaround Time: 434.5994800000009	Weighted Turnaround Time :32.083470275138666
+Process ID: 47	Waiting Time: 43.39575000000009	Turnaround Time: 51.49438000000009	Weighted Turnaround Time :6.358406298349238
+Process ID: 48	Waiting Time: 223.8602600000005	Turnaround Time: 235.68776000000048	Weighted Turnaround Time :19.92709871063204
+Process ID: 49	Waiting Time: 172.45524000000034	Turnaround Time: 184.84204000000034	Weighted Turnaround Time :14.922501372428743
+Process ID: 50	Waiting Time: 602.9558999999923	Turnaround Time: 622.3524999999923	Weighted Turnaround Time :32.08564903127313
+
+
+Average Turnaround Time: 275.8188149999997
+Average Weighted Turnaround Time: 19.945999405064196

@@ -18,6 +18,12 @@ class Process:
         self.TurnaroundTime=-1
         self.WeightedTurnaroundTime=-1
         self.Color=color
+        self.firstStart=-1
+        self.lastEnd=-1
+    def set_firstStart(self,firstStart):
+        self.firstStart=firstStart
+    def set_lastEnd(self,lastEnd):
+        self.lastEnd=lastEnd
 
 def printVector(ProcessesVector):
     for process in ProcessesVector:
@@ -28,7 +34,7 @@ def takeInputProcesses(OriginalProcessesVector):
     global InputFileName
     InputFile  = open(InputFileName,'r') 
     NumberOfProcesses=0
-    cmap = plt.get_cmap('jet')
+    cmap = plt.get_cmap('nipy_spectral')
     i=0
     MinStepBurstIndex=0
     MinStepArrivalIndex=0
@@ -44,13 +50,6 @@ def takeInputProcesses(OriginalProcessesVector):
 
         OriginalProcessesVector.append(Process(int(newProcess[0]),float(newProcess[1]),float(newProcess[2]),int(newProcess[3]),colors[i]))
         i+=1
-        #for j in range(0,i):
-        #    CurrentStep=OriginalProcessesVector[j].BurstTime-int(OriginalProcessesVector[j].BurstTime)
-        #    if(CurrentStep<OriginalProcessesVector[MinStepBurstIndex].BurstTime-int(OriginalProcessesVector[MinStepBurstIndex].BurstTime)):
-        #        MinStepBurstIndex=j
-        #    CurrentStep=OriginalProcessesVector[j].ArrivalTime-int(OriginalProcessesVector[j].ArrivalTime)
-        #    if(CurrentStep<OriginalProcessesVector[MinStepArrivalIndex].ArrivalTime-int(OriginalProcessesVector[MinStepArrivalIndex].ArrivalTime)):
-        #        MinStepArrivalIndex=j
 
     MinStepBurst=min(OriginalProcessesVector,key=lambda item:item.BurstTime)
     MinStepArrival=min(OriginalProcessesVector,key=lambda item:item.BurstTime)
@@ -58,11 +57,11 @@ def takeInputProcesses(OriginalProcessesVector):
     MinStepBurst=MinStepBurst.BurstTime
     MinStepArrival=MinStepArrival-int(MinStepArrival)
     MinStepBurst=MinStepBurst-int(MinStepBurst)
-
-    return float((MinStepBurst+MinStepArrival)/2)
+    
+    return min(MinStepBurst,MinStepArrival)
    
 def printOutputFile(ProcessesVectorResults):
-    OutputFileName  =filedialog.asksaveasfilename(title = "Save file",filetypes = (("Text Files","*.txt"),))
+    OutputFileName  =filedialog.asksaveasfilename(defaultextension=".txt",title = "Save file",filetypes = (("Text Files","*.txt"),))
     OutputFile= open(OutputFileName,'w');
     AVGWeightedTurnaroundTime=0
     AVGTurnaroundTime=0
