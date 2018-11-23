@@ -1,0 +1,10 @@
+Process ID: 4	Waiting Time: 25.90000000000022	Turnaround Time: 34.90000000000022	Weighted Turnaround Time :3.877777777777802
+Process ID: 5	Waiting Time: 26.30000000000015	Turnaround Time: 28.30000000000015	Weighted Turnaround Time :14.150000000000075
+Process ID: 3	Waiting Time: 13.700000000000063	Turnaround Time: 20.700000000000063	Weighted Turnaround Time :2.957142857142866
+Process ID: 2	Waiting Time: 0.0999999999999801	Turnaround Time: 6.09999999999998	Weighted Turnaround Time :1.0166666666666633
+Process ID: 1	Waiting Time: 6.099999999999964	Turnaround Time: 11.099999999999964	Weighted Turnaround Time :2.2199999999999926
+Process ID: 6	Waiting Time: 4.5999999999999694	Turnaround Time: 7.5999999999999694	Weighted Turnaround Time :2.533333333333323
+
+
+Average Turnaround Time: 18.116666666666724
+Average Weighted Turnaround Time: 4.459153439153454
