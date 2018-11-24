@@ -113,13 +113,13 @@ def drawButtonCallback():
     if var.get() == 1:
         ProcessesVectorResults=Scheduler.HPF(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
     elif var.get() == 2:
-        ProcessesVectorResults=Scheduler.FCFS(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
+         ProcessesVectorResults=FCFS(ProcessesVector,float(InputContextSwitching.get()))
     elif var.get() == 3:
         if(InputTimeQuantum.get()== ''):
             messagebox.showerror("ERROR", "Please enter the time quantum to perform Round Robin algorithm")
             return
         else:
-            ProcessesVectorResults=Scheduler.RR(ProcessesVector,float(InputTimeQuantum.get()),float(InputContextSwitching.get()),TimeStep)
+           ProcessesVectorResults=RR(ProcessesVector,float(InputTimeQuantum.get()),float(InputContextSwitching.get()))
     elif var.get() == 4:
         ProcessesVectorResults=Scheduler.SRTN(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
     result = messagebox.askquestion("Save", "Do you wanna save statistics file?")
