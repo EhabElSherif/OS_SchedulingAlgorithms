@@ -81,8 +81,6 @@ def SRTN(ProcessesVector,Context,TimeStep):
                    start = CurrentTime
 
             if not (i==-1 or i == ReadyQueue[0].ID):
-                #3ashan lamma beykon 5allas wa7da bey7ott start bel current w yegy fe l loop l tanya 
-                #yersem 3ashan fe wa7da lessa da5la a2al
                 x.append(start)
                 y.append(i)
                 color_.append(ProcessesVectorResult[i-1].Color)
@@ -104,12 +102,14 @@ def SRTN(ProcessesVector,Context,TimeStep):
                 start=-1
                 if len(ReadyQueue)>0:
                     CurrentTime+=Context
+                    while(len(ProcessesVector)>0 and ProcessesVector[0].ArrivalTime<=CurrentTime):
+                        ReadyQueue.append(ProcessesVector.pop(0))
                     i= ReadyQueue[0].ID
                 continue
             ReadyQueue[0].BurstTime-=TimeStep    
          CurrentTime+=TimeStep
 
-    plt.xticks(np.arange(0,CurrentTime,50))
+    plt.xticks(np.arange(0,CurrentTime,CurrentTime/len(x)))
     plt.bar(x,height=y,width=width_,color=color_,align='edge',linewidth=0.5,edgecolor='k')
     plt.grid(axis='y',color='gray',linestyle='dashed')
     plt.show()

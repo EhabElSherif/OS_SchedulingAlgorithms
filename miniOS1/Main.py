@@ -68,7 +68,7 @@ def printOutputFile(ProcessesVectorResults):
     for process in ProcessesVectorResults:
         AVGTurnaroundTime+=process.TurnaroundTime
         AVGWeightedTurnaroundTime+=process.WeightedTurnaroundTime
-        OutputFile.writelines('Process ID: '+str(process.ID)+'\tWaiting Time: '+str(process.WaitingTime)+
+        OutputFile.writelines('Process ID: '+str(process.ID)+'\tWaiting Time: '+max(0,str(process.WaitingTime))+
                                 '\tTurnaround Time: '+str(process.TurnaroundTime)+'\tWeighted Turnaround Time :'+str(process.WeightedTurnaroundTime)+'\n')
     
     OutputFile.writelines('\n\nAverage Turnaround Time: '+str(AVGTurnaroundTime/len(ProcessesVectorResults))+'\nAverage Weighted Turnaround Time: '+
@@ -106,7 +106,6 @@ def drawButtonCallback():
 
     if not len(OriginalProcessesVector):
         TimeStep=takeInputProcesses(OriginalProcessesVector)
-    
     if (TimeStep == 0 or TimeStep < 0.05):
         TimeStep=0.1
     ProcessesVector= copy.deepcopy(OriginalProcessesVector)
