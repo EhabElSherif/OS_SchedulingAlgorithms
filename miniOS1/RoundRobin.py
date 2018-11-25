@@ -38,6 +38,9 @@ def RR(processesVector,timeQuantum,contextSwitching):
     currentTime=0
     RR=copy.deepcopy(processes)
     plotRR(RR,timeQuantum,maxIntervals,contextSwitching)
+    
+    for i in range (len(processes)):
+        processes[i].set_lastEnd(RR[i].lastEnd)
     statistics(processes)
     return processes
 
@@ -55,7 +58,7 @@ def plotRR(processes,timeQuantum,maxIntervals,contextSwitching):
     IDArray=[]
     for j in range(maxIntervals):
         for i in range(len(processes)):
-            if(processes[i].BurstTime <=0):
+            if(processes[i].BurstTime !=0):
                 minimum=min(timeQuantum,processes[i].BurstTime)
                 if(j==0):
                     start=processes[i].firstStart
@@ -70,8 +73,9 @@ def plotRR(processes,timeQuantum,maxIntervals,contextSwitching):
                 IDArray.append(processes[i].ID)
                 
                 processes[i].BurstTime=processes[i].BurstTime-minimum
-                if(processes[i].BurstTime==0):
+                if(processes[i].BurstTime<=0 and processes[i].lastEnd==-1):
                    processes[i].set_lastEnd(currentTime)
+                   print(processes[i].lastEnd)
     plt.bar(startArray,IDArray, width=(minimumArray), align='edge',color=colorArray)
 
     plt.ylabel('Processes')
