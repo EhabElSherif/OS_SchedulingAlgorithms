@@ -38,9 +38,9 @@ def plot(processes):
     for i in range(len(processes)):
 
         start.append(processes[i].firstStart)
-        burst.append(processes[i].burstTime)
-        ID.append(processes[i].id)
-        coulor.append(processes[i].color)
+        burst.append(processes[i].BurstTime)
+        ID.append(processes[i].ID)
+        coulor.append(processes[i].Color)
     plt.bar(start,ID, width=(burst), align='edge',color=coulor )
         
          

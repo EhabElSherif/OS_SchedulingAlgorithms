@@ -4,7 +4,10 @@ import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
 from tkinter import *
-import Scheduler
+from HPF import *
+from SRTN import *
+from FCFS import *
+from RoundRobin import *
 import sys
 import copy
 
@@ -110,7 +113,7 @@ def drawButtonCallback():
         TimeStep=0.1
     ProcessesVector= copy.deepcopy(OriginalProcessesVector)
     if var.get() == 1:
-        ProcessesVectorResults=Scheduler.HPF(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
+        ProcessesVectorResults=HPF(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
     elif var.get() == 2:
          ProcessesVectorResults=FCFS(ProcessesVector,float(InputContextSwitching.get()))
     elif var.get() == 3:
@@ -120,7 +123,7 @@ def drawButtonCallback():
         else:
            ProcessesVectorResults=RR(ProcessesVector,float(InputTimeQuantum.get()),float(InputContextSwitching.get()))
     elif var.get() == 4:
-        ProcessesVectorResults=Scheduler.SRTN(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
+        ProcessesVectorResults=SRTN(ProcessesVector,float(InputContextSwitching.get()),TimeStep)
     result = messagebox.askquestion("Save", "Do you wanna save statistics file?")
     if(result == "yes"):
         printOutputFile(ProcessesVectorResults)

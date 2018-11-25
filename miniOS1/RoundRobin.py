@@ -75,14 +75,12 @@ def plotRR(processes,timeQuantum,maxIntervals,contextSwitching):
                 processes[i].BurstTime=processes[i].BurstTime-minimum
                 if(processes[i].BurstTime<=0 and processes[i].lastEnd==-1):
                    processes[i].set_lastEnd(currentTime)
-                   print(processes[i].lastEnd)
     plt.bar(startArray,IDArray, width=(minimumArray), align='edge',color=colorArray)
-
     plt.ylabel('Processes')
     plt.xlabel('Time')
     plt.title('Round Robin')
- 
     plt.show()
+
 def statistics(processes):
     for i in range(len(processes)):
         processes[i].TurnaroundTime=processes[i].lastEnd - processes[i].ArrivalTime

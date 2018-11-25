@@ -21,8 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FCFS.py" />
     <Compile Include="Main.py" />
-    <Compile Include="Scheduler.py" />
+    <Compile Include="HPF.py" />
+    <Compile Include="RoundRobin.py" />
+    <Compile Include="SRTN.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
