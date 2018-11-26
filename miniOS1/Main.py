@@ -71,7 +71,7 @@ def printOutputFile(ProcessesVectorResults):
     for process in ProcessesVectorResults:
         AVGTurnaroundTime+=process.TurnaroundTime
         AVGWeightedTurnaroundTime+=process.WeightedTurnaroundTime
-        OutputFile.writelines('Process ID: '+str(process.ID)+'\tWaiting Time: '+max(0,str(process.WaitingTime))+
+        OutputFile.writelines('Process ID: '+str(process.ID)+'\tWaiting Time: '+str(max(0,process.WaitingTime))+
                                 '\tTurnaround Time: '+str(process.TurnaroundTime)+'\tWeighted Turnaround Time :'+str(process.WeightedTurnaroundTime)+'\n')
     
     OutputFile.writelines('\n\nAverage Turnaround Time: '+str(AVGTurnaroundTime/len(ProcessesVectorResults))+'\nAverage Weighted Turnaround Time: '+
